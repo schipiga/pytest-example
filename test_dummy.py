@@ -1,5 +1,9 @@
+import allure
+
 def test_true():
-    assert True
+    with allure.step('Check value'):
+        assert True
 
 def test_false():
-    assert False
+    with allure.step('Check value'):
+        assert False
